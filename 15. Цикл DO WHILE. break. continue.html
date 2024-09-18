@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Цикл DO WHILE. BREAK. CONTINUE.</h1>
+    <script>
+        // let number, sum = 0;
+        // let info = "выберите действие: 1 - грн; 2 - dollar; 3 - Выход";
+        // do {
+        //     number = + parseInt (prompt(info, 1));
+        //     if (number == 1){
+        //         let uah = parseInt (prompt("введите сумму грн =", 0));
+        //         alert("Сумма= "+uah/41.5+"")
+        //     }
+        //     if (number == 2){
+        //         let uah = parseInt (prompt("введите сумму долларов =", 0));
+        //         alert("Сумма= "+uah*41.5+"")
+        //     }
+           
+        // }
+        // while (number != 3);
+        // alert("ВЫХОД");
+        // let number;
+        // let info = "выберите действие: 1 - мили в км; 2 - км в мили; 3 - Выход";
+        // do {
+        //     number = + parseInt (prompt(info, 1));
+        //     if (number == 1){
+        //         let mils = parseInt (prompt("введите мили =", 0));
+        //         alert("Сумма= "+mils*1.6+"")
+        //     }
+        //     if (number == 2){
+        //         let kilom = parseInt (prompt("введите киллометры =", 0));
+        //         alert("Сумма= "+kilom/1.6+"")
+        //     }
+           
+        // }
+        // while (number != 3);
+        // alert("ВЫХОД");
+
+        let res = 1;
+        let factorial = parseInt (prompt("введите число =", 0));
+        do {
+                res*=factorial;
+                factorial--;
+            }
+                 
+        while (factorial > 0);
+        alert (res);
+    </script>
+</body>
+</html>
+
