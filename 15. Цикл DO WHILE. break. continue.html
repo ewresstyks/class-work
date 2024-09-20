@@ -1,12 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>JavaScript</title>
 </head>
+
 <body>
     <h1>Цикл DO WHILE. BREAK. CONTINUE.</h1>
     <script>
+        //обменник
         // let number, sum = 0;
         // let info = "выберите действие: 1 - грн; 2 - dollar; 3 - Выход";
         // do {
@@ -19,7 +22,8 @@
         //         let uah = parseInt (prompt("введите сумму долларов =", 0));
         //         alert("Сумма= "+uah*41.5+"")
         //     }
-           
+
+        //мили в км
         // }
         // while (number != 3);
         // alert("ВЫХОД");
@@ -35,21 +39,63 @@
         //         let kilom = parseInt (prompt("введите киллометры =", 0));
         //         alert("Сумма= "+kilom/1.6+"")
         //     }
-           
+
         // }
         // while (number != 3);
         // alert("ВЫХОД");
 
-        let res = 1;
-        let factorial = parseInt (prompt("введите число =", 0));
-        do {
-                res*=factorial;
-                factorial--;
+        //факториал
+        // let res = 1;
+        // let factorial = parseInt (prompt("введите число =", 0));
+        // do {
+        //         res*=factorial;
+        //         factorial--;
+        //     }
+
+        // while (factorial > 0);
+        // alert (res);
+
+        //вывод чисел
+        // let i = 0;
+        // let result; 
+
+        // while (i <= 100) {
+        //   if (i % 3 === 0) {
+        //   result += i + " ";  
+        //        }
+        // i++;
+        // }
+
+        // alert(result); 
+
+
+        let min = 0;
+        let max = 100;
+        let assum;
+
+        alert("Загадайте число от 0 до 100 и я попробую угадать))) ");
+
+        while (true) {
+            assum = (min + max) / 2; 
+            assum = parseInt(assum); 
+
+            let response = prompt("Ваше число > " + assum + ", < " + assum + " или == " + assum + "?");
+
+            if (response === "==") {
+                alert("Я же говорил! Я угадал ваше число))) " + assum);
+                break;
+            } else if (response === ">") {
+                min = assum + 1; 
+            } else if (response === "<") {
+                max = assum - 1; 
+            } else {
+                alert("Пожалуйста, введите '>', '<' или '==' для ответа.");
             }
-                 
-        while (factorial > 0);
-        alert (res);
+        }
+
+
+
     </script>
 </body>
-</html>
 
+</html>
